@@ -12,7 +12,7 @@ int main()
     float temp;
     for (int i=0;i<10;i++) {
         sensor.temp_sense(&temp);
-        pc.printf("temp = %f\r\n",temp);
+        pc.printf("temp = %f [degC]\r\n",temp);
         wait(1.0);
     }
 }
